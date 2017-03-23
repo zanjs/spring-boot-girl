@@ -13,6 +13,9 @@ public class GirdController {
     @Autowired
     private GirlRepository girlRepository;
 
+    @Autowired
+    private GirlService girlService;
+
     /**
      * 查询所有女生列表
      * @return
@@ -79,5 +82,11 @@ public class GirdController {
     @GetMapping(value = "/girls/age/{age}")
     public List<Girl> showAge(@PathVariable("age") Integer age){
         return girlRepository.findByAge(age);
+    }
+
+    @PostMapping(value = "/girls/two")
+    public void two(){
+
+        girlService.insertTwo();
     }
 }
