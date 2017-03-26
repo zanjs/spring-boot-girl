@@ -1,4 +1,4 @@
-package com.anla;
+package com.anla.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

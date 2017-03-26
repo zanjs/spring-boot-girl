@@ -1,5 +1,6 @@
-package com.anla;
+package com.anla.repository;
 
+import com.anla.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

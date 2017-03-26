@@ -1,10 +1,10 @@
-package com.anla;
+package com.anla.service;
 
+import com.anla.domain.Girl;
+import com.anla.repository.GirlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
-import java.beans.Transient;
 
 /**
  * Created by Anl on 2017/3/23.

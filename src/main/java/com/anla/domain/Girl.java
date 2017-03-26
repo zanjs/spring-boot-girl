@@ -1,8 +1,9 @@
-package com.anla;
+package com.anla.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.Min;
 
 /**
  * Created by Anl on 2017/3/23.
@@ -15,6 +16,7 @@ public class Girl {
 
     private String cupSize;
 
+    @Min(value = 18, message = "未成年哦")
     private Integer age;
 
     public Girl(){
